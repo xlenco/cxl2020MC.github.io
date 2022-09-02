@@ -48,7 +48,10 @@ cw是cyf大佬开发的一个简单且配置方便的一个sw
 
 ![](https://cxl2020mc-1304820025.file.myqcloud.com/file/202208072113936.png)
 
-[官方文档](https://clientworker.js.org/)
+
+<!-- [官方文档](https://clientworker.js.org/) -->
+
+{% link clientworker官方文档,https://clientworker.js.org %}
 
 # 快速开始
 
@@ -207,7 +210,7 @@ if (!!navigator.serviceWorker) {
 
 1. 打开根目录的hexo配置文件`_config.yml`
 
-```yml
+```diff
 skip_render: 
 +      - config.yaml
 ```

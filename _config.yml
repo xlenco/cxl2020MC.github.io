@@ -120,7 +120,31 @@ deploy:
   # type: cos
   # 放环境变量里了
 
-
+# tag-plugins-plus
+# see https://akilar.top/posts/615e2dec/
+tag_plugins:
+  enable: true # 开关
+  priority: 5 #过滤器优先权
+  issues: false #issues标签依赖注入开关
+  link:
+    placeholder: /img/link.png # /img/link.png #link_card标签默认的图标图片
+  CDN:
+    #动画标签anima的依赖
+    anima: https://jsd.cxl2020mc.top/npm/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css
+    #issues标签依赖
+    jquery: https://jsd.cxl2020mc.top/npm/jquery@latest/dist/jquery.min.js
+    #issues标签依赖
+    issues: https://jsd.cxl2020mc.top/npm/hexo-butterfly-tag-plugins-plus@latest/lib/assets/issues.js
+    # iconfont标签symbol样式引入，如果不想引入，则设为false
+    # //at.alicdn.com/t/font_2032782_8d5kxvn09md.js
+    # 参看https://akilar.top/posts/d2ebecef/
+    # https://cxl2020mc-1304820025.file.myqcloud.com/js/font_2032782_8d5kxvn09md.js
+    iconfont: false
+    # carousel旋转相册标签鼠标拖动依赖，如果不想引入则设为false
+    # https://jsd.cxl2020mc.top/npm/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js
+    carousel: false
+    # 外挂标签样式的CSS依赖
+    tag_plugins_css: https://jsd.cxl2020mc.top/npm/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css
 
 search:
   path: search.json # search.xml
